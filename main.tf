@@ -13,7 +13,7 @@ provider "digitalocean" {
 
 resource "digitalocean_droplet" "jenkins" {
   image    = "ubuntu-22-04-x64"
-  name     = "jenkins-vm1"
+  name     = "jenkins-vm"
   region   = var.region
   size     = "s-2vcpu-2gb"
   ssh_keys = [data.digitalocean_ssh_key.sshkey-primeiro-prj-terraform.id]
